@@ -1,0 +1,220 @@
+/* 
+USO DE COLORES 
+ - #253C59: Para subtítulos o para resaltar el
+texto cuando el fondo sea color.
+ - #2D4B73: Resaltar algún cuadro o figura que
+contenga texto (botones).
+ - #99B4BF: Resaltar algún cuadro o figura que
+contenga texto (botones)
+ - #D9B70D: Para resaltar texto cuando el fondo
+sea #2D4B73. También se puede
+usar para resaltar detalles de los
+botones.
+
+
+***** css *****
+
+/*
+#D9B70D -- Dorado
+#253C59 -- Azul obscuro
+#4C5973 -- Azul 
+#99B4BF -- Azul claro
+#FFFFFF -- !Negro
+
+//Falta descargar tipo de letra 
+font-family: "DM Sans", sans-serif; 
+Titulos 
+font-family: "Poppins", sans-serif;
+*/
+
+*/ body {
+    font-family: "DM Sans", sans-serif;
+    color: #FFFFFF;
+}
+
+i {
+    width: 50px;
+    text-align: center;
+    /*font-size: 60px;*/
+}
+
+.container--general {
+    background-color: #253C59;
+    color: #FFFFFF;
+    margin: auto;
+    border-radius: 20px;
+    padding: 20px;
+    margin-top: 100px;
+    margin-bottom: 50px;
+    border: solid 2px #D9B70D;
+    
+}
+
+/************Titulo**********/
+.container--general--titulo h1 {
+    text-align: left;
+    font-family: "Poppins", sans-serif;
+    color: #FFFFFF;
+    font-weight: bold;
+
+}
+
+input, select, label {
+    width: 100%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+#fecha-nacimiento {
+    text-align: center;
+}
+/*Modificacion del boton*/
+.div--boton {
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+
+
+}
+/***********Estilos del boton*************/
+.boton--registrarse {
+    font-family: "Poppins", sans-serif;
+    font-weight: bold;
+    border-radius: 20px;
+    text-align: center;
+    font-size: 20px;
+    border: 2px solid #253C59;
+    color: #253C59;
+    background-color: #D9B70D;
+    cursor: pointer;
+    padding: 3px, 3px,3px,3px;
+    cursor: pointer;
+    padding: 3px, 3px,3px,3px;
+    width: 200px;
+    
+}
+
+.boton--registrarse:hover {
+
+    border: 2px solid #D9B70D;
+    color: #D9B70D;
+    background-color: #253C59;
+    transition: 0.5s;
+}
+
+.form-redes { 
+    font-size: x-large;
+    text-align: center;
+    font-family: "Poppins", sans-serif;
+    color: #FFFFFF;
+    font-weight: bold;
+    margin:auto;
+    display: flex;
+    flex-direction: row;
+}
+
+
+.columna1-fila{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 20px;
+}
+.icon{
+    color: #FFFFFF;
+    text-decoration: none;
+}
+.icon:hover{
+    color: #D9B70D;
+    text-decoration: none;
+}
+.icon-container {
+    gap: 10px; /* Espacio entre los íconos */
+    justify-content: center; /* Centra los íconos horizontalmente */
+    padding: 10px; /* Espacio interior */
+}
+
+.icon-container i {
+    font-size: 17px; /* Tamaño de los íconos */
+    cursor: pointer; /* Cambia el cursor a mano al pasar sobre el ícono */
+}
+
+.icon-container i.hide {
+    display: none; /* Oculta los íconos con clase 'hide' */
+}
+
+
+.fa-eye {
+    color: #D9B70D;
+    cursor: pointer;
+}
+
+.fa-eye-slash {
+    color: #99B4BF;
+    cursor: pointer;
+}
+
+.hide{
+    display: none;
+    
+}
+
+ .i-img {
+    margin: 1px;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 20px;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    font-size: 70px; 
+}
+
+
+.i-icon {
+    font-size: 50px;
+} 
+/*Estilos del checkbox "No soy un robot"*/
+.remember-me--position {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+
+}
+.remember-me {
+    font-family: 'Poppins',sans-serif;
+    font-weight: 600;
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 20px;
+
+    background-color: #99B4BF;
+    color: #2D4B73;
+    width:230px;
+
+}
+
+#robot-check{
+    margin-left: 10px;
+}
+
+
+.linkInformativo:hover{
+    color: #D9B70D;
+}
+
+    @media (max-width: 500px){
+        .columna1-fila {
+            display: flex;
+            flex-direction: column;
+        }
+        .i-img {
+            display: flex;
+            font-size: 50px;
+            padding: 10px;
+        }   
+    }
