@@ -1,0 +1,134 @@
+/* Footer contenido general */
+#footer {
+    border-width: 5px;
+    border-style: solid;
+    border-color: #D9B70D;
+    background-color: #2D4B73;
+    text-align: center;
+    justify-content: space-around;
+    padding: 10px 20px;
+    width: 100%;
+    min-height: 200px;  
+}
+
+
+.footer--container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly ;
+    
+}
+
+.footer--container p{
+    display: flex;
+    text-wrap:wrap;
+   
+}
+
+
+.mitad1{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    width: 60%;
+
+}
+.mitad2{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    width: 40%;
+
+    
+}
+
+
+
+.footer--container--2{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    color:#FFFFFF !important;
+}
+
+.social-link{
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+        font-size: 20px;
+}
+.borde{
+
+
+    text-align: justify;
+    padding: 8px;
+}
+
+
+/* Especificaciones para los subtitulos del footer */
+.subtitulo--footer{
+    color: #D9B70D;
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    text-align:left;
+    
+}
+
+/* Especificaciones para los textos anchor del footer */
+ .anchor--footer{
+    color:#FFFFFF !important;
+    list-style:none;
+    cursor: pointer ;
+    font-family: "DM Sans", sans-serif !important;
+    font-optical-sizing: auto;
+    font-weight: 10px;
+    font-style: normal;
+    text-align:left;
+    margin-left: -20px ;
+}
+.enlaces--footer{
+    color:#FFFFFF !important;
+    text-decoration: none !important;
+
+}
+
+.enlaces--footer:hover, .anchor--footer:hover{
+    color: #D9B70D !important;
+    
+}
+
+@media (max-width: 1020px) {
+    .footer--container{
+        flex-direction: column;
+    }
+    .mitad1{
+        width: 100%;
+
+    }
+    .mitad2{
+        width: 100%;
+
+    }
+
+}
+@media (max-width: 650px) {
+    .footer--container{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .mitad1{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .mitad2{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+
+
+}
